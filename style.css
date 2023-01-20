@@ -1,0 +1,46 @@
+*{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif ; 
+}
+
+.left{
+    height: 700px; 
+    width: 430px;
+    background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png);
+    background-repeat: no-repeat;
+
+}
+
+.left img{
+    position: relative;
+    top: 27px;
+    left: 155px;
+}
+
+input{
+    all: unset;
+    padding: 10px;
+    border: 1px solid rgb(219,219,219);
+    margin-top: 10px;
+}
+
+input:focus,input:active{
+    border: 1px solid rgb(38,38,38,0.4);
+}
+
+button{
+    background-color: #47afff;
+    text-align: center;
+    border: none;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+h1 {
+    
+    background: -webkit-linear-gradient(rgb(0, 131, 238), rgb(142, 143, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

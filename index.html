@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login pagae</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#fafafa; height: 100vh; margin: 0px; font-family: -apple-systerm; ">
+    <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="left">
+            <img src="insta.png" alt="instagram images">
+        </div>
+        <div class="right">
+            <div style="display:flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: stretch; width: 350px; background-color: white; border: 1px solid rgb(219,219,219); padding: 40px; margin: 20px;">
+                <h1 style="padding: 0px 50px 0px 50px; margin-left: 50px;">Harishcsx</h1>
+                <input type="text" id="username" placeholder="Phone number, username, or email"/>
+                <input type="password" id="password" placeholder="Password"/>
+                <button onclick="validateForm()">
+                    Log in
+                </button>
+            </div>
+        </div>
+    </div>    
+    <script>
+    function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  if (username == "" || password == "") {
+    alert("Both fields must be filled out");
+    return false;
+  }
+  else{
+    
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        document.getElementById("output").innerHTML = "Username: " + username + "<br>Password: " + password;
+      
+    
+  }
+}
+
+
+</script>
+</body>
+</html>
