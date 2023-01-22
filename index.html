@@ -7,16 +7,16 @@
     <title>login pagae</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:#fafafa; height: 100vh; margin: 0px; font-family: -apple-systerm; ">
+<body style="background-color: rgba(2, 0, 15, 0.945); height: 100vh; margin: 0px; font-family: -apple-systerm; ">
     <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center; margin-top: 20px;">
         <div class="left">
             <img src="insta.png" alt="instagram images">
         </div>
         <div class="right">
-            <div style="display:flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: stretch; width: 350px; background-color: white; border: 1px solid rgb(219,219,219); padding: 40px; margin: 20px;">
+            <div style="display:flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: stretch; width: 350px; background-color: black; border: 1px solid rgb(114, 114, 114); padding: 40px; margin: 20px; border-radius: 25px; ">
                 <h1 style="padding: 0px 50px 0px 50px; margin-left: 50px;">Harishcsx</h1>
-                <input type="text" id="username" placeholder="Phone number, username, or email"/>
-                <input type="password" id="password" placeholder="Password"/>
+                <input style="color: white;" type="text" id="username" placeholder="Phone number, username, or email"/>
+                <input type="password" style="color: white;" id="password" placeholder="Password"/>
                 <button onclick="validateForm()">
                     Log in
                 </button>
@@ -31,7 +31,14 @@
     alert("Both fields must be filled out");
     return false;
   }
-  
+  else{
+    
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        document.getElementById("output").innerHTML = "Username: " + username + "<br>Password: " + password;
+      
+    
+  }
 }
 
 
